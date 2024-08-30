@@ -1,0 +1,8 @@
+ cd
+    2  rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+    3  dnf install jenkins -y
+    4  systemctl enable jenkins
+    5  systemctl start jenkins
+    6  systemctl status jenkins
+    7  cat /var/lib/jenkins/secrets/initialAdminPassword
+    8  history
